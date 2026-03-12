@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 class Movement{
-    publicL
+    public:
         void move(){
             cout<<"Vehicle id moving\n";
         }
@@ -22,8 +22,9 @@ class Car : public Movement, public Fuel
 int main()
 {
     Car myCar;
-    myCar move();
+    myCar.move();
     myCar.refillFuel();
     myCar.honk();
     return 0;
+
 }
